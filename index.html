@@ -36,19 +36,61 @@
 
 
 <body>
-    <div class="stickheader" id="myHeader">
+    <!-- top section (max-width: 100% of viewport) -->
+    <div class="top-section" id="top-section">
+        <!-- Hero (max-width: 1600px;) -->
+        <div class="hero-display">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#"
+            ><i class="far fa-paper-plane"></i> BRL Playlist</a
+            >
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="https://open.spotify.com/">Spotify</a>
+                <a class="nav-item nav-link" href="https://brlakgec.com/">BRL</a>
+                <a class="nav-item nav-link" href="https://hacktoberfest.com/">Hacktoberfest'2022</a>
+                <input class="search-bar nav-item nav-link" id="search_bar" type="text" onkeyup="searchPlaylist()" placeholder="Search Playlists...">
+            </div>
+            </div>
+        </nav>
+        <!-- Hero Text -->
+        <div class="hero-text">
+            <h1 class="hero-h1">
+            Musical <br />
+            Experience
+            </h1>
+            <h2 class="hero-h2">
+            A place to share your playlists with your team members on the ocassion of Hacktoberfest'2022
+            </h2>
+        </div>
+        <a href="#main">
+            <button class="read-more-button" type="button" name="button">
+                <i class="fas fa-angle-down s"></i>
+            </button>
+        </a>
+        
+        </div>
+    </div>
+
+    <!-- <div class="stickheader" id="myHeader">
         <h2 class="title"> BRL PLAYLIST</h2>
         <input id="search_bar" type="text" onkeyup="searchPlaylist()" placeholder="Search Playlists...">
-    </div>
-    <h3 class="subtitle">"A place to share your playlists with your team members on the ocassion of Hacktoberfest'2022"
-    </h3>
+    </div> -->
 
-
-    <div class="main">
-
-        
+    <div class="main" id="main">
         <!--Aditya's card -->
-
         <div class="card">
             <div class="image">
                 <img src="https://cdn.w600.comps.canstockphoto.com/drum-and-guitar-playing-with-the-rock-picture_csp35982914.jpg">
@@ -323,6 +365,22 @@
             </div>
         </div>
         
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
         
 </body>
 
