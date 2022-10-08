@@ -43,8 +43,7 @@ body {
 #search_bar {
   float: right;
   display: block;
-  text-align: left;
-  width: 30%;
+  text-align: center;
   margin-right: 1%;
   padding: 10px;
 }
@@ -62,6 +61,7 @@ body {
         box-shadow: 2px 2px 10px silver;
         border-radius: 5px;
         margin: 2% auto;
+        background-color: #000;
     }
 
     @media (max-width:1368px){
@@ -189,4 +189,190 @@ button:hover {
   font-size: larger;
   text-align: center;
   margin-top: 200px;
+}
+
+
+/* Hero */
+
+.left {
+  left: 15px;
+  position: absolute;
+}
+
+.right {
+  right: 15px;
+  position: absolute;
+}
+
+/* top section */
+
+.top-section {
+  background-image: url("https://images.unsplash.com/photo-1594623930572-300a3011d9ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 15px 15px;
+  position: static;
+}
+
+.hero-display {
+  max-width: 1600px;
+  margin: 0 auto 0;
+  height: 900px;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  padding-top: 35px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.collapse {
+  position: absolute;
+  left: 25%;
+}
+
+.navbar-brand {
+  color: #f7f7f7;
+  font-family: "Inconsolata";
+  font-size: 2em;
+  font-weight: 700;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav-link {
+  color: #f7f7f7;
+  font-family: "Inconsolata";
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 25px 0;
+  position: relative;
+}
+
+.nav-link:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #f7f7f7;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.search-bar{
+  border-radius: 50px;
+}
+
+/* Hero Text style */
+
+.hero-h1 {
+  color: #f7f7f7;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 4.2em;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 45px;
+}
+
+.hero-h2 {
+  color: #f7f7f7;
+  font-family: "Inconsolata";
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.hero-text {
+  bottom: 60px;
+  left: 35px;
+  padding-right: 25px;
+  position: absolute;
+}
+
+.read-more-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 30px;
+  bottom: -30px;
+  box-shadow: 2px 5px 10px 0 rgba(69, 50, 42, 0.2);
+  cursor: pointer;
+  height: 60px;
+  left: calc(50% - 30px);
+  position: absolute;
+  transform: scale(0.98);
+  width: 60px;
+  color: black;
+}
+
+/* #e6e6e6 */
+
+/* Media controls */
+/* width is greater than 1200px */
+@media (min-width: 1200px) {
+  .hero-h1 {
+    font-size: 9em;
+  }
+}
+
+/* width is less than 1400px */
+@media (max-width: 1400px) {
+  .less-imp {
+    display: none;
+  }
+
+  .cards-vol-wrapper {
+    max-width: 1000px;
+  }
+
+  .cards-vol-wrapper-header {
+    max-width: 1000px;
+  }
+}
+
+/* width is less than 1200px */
+@media (max-width: 1200px) {
+  .hero-h1 {
+    font-size: 6em;
+  }
+}
+
+/* Width is less than 900px */
+@media (max-width: 900px) {
+  .navbar {
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  .collapse {
+    position: static;
+  }
+
+  .hero-display {
+    height: 600px;
+  }
+
+  .hero-text {
+    left: 20px;
+  }
+
+  .hero-h1 {
+    font-size: 4.2em;
+  }
+
+  .read-more-button {
+    display: none;
+  }
 }
