@@ -17,7 +17,10 @@ function searchPlaylist() {
         }
     }
 }
-const gotopbtn = document.querySelector(".gotopbtn"); //gotopbutton
+
+
+// gotopbutton
+const gotopbtn = document.querySelector(".gotopbtn");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
