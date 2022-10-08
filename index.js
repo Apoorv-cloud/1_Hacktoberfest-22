@@ -17,3 +17,15 @@ function searchPlaylist() {
         }
     }
 }
+
+
+// gotopbutton
+const gotopbtn = document.querySelector(".gotopbtn");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        gotopbtn.classList.add("active");
+    } else {
+        gotopbtn.classList.remove("active")
+    }
+});
