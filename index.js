@@ -17,7 +17,6 @@ function searchPlaylist() {
         }
     }
 }
-
 // gotopbutton
 const gotopbtn = document.querySelector(".gotopbtn");
 
