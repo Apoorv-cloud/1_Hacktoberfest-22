@@ -16,8 +16,8 @@ function searchPlaylist() {
             card[i].style.display = "none";
         }
     }
-// gotopbutton
-const gotopbtn = document.querySelector(".gotopbtn");
+}
+const gotopbtn = document.querySelector(".gotopbtn"); //gotopbutton
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
