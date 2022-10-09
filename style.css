@@ -43,6 +43,7 @@ body {
 #search_bar {
   float: right;
   display: block;
+  color: #000;
   text-align: center;
   margin-right: 1%;
   padding: 10px;
