@@ -41,6 +41,7 @@ body {
 }
 
 #search_bar {
+  color: #000;
   float: right;
   display: block;
   text-align: center;
